@@ -1,0 +1,7 @@
+<h2><%= @list.name %></h2>
+
+<%= link_to 'Create Step', new_list_step_path(@list) %>
+
+<%= link_to 'Back', lists_path %>
+<%= link_to 'Destroy', @project, method: :delete, data: { confirm: 'Are you sure?' } %>
+

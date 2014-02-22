@@ -1,0 +1,6 @@
+<h2><%= @step.description %></h2>
+<p>List ID: <%= params[:list_id] %> </p>
+<p>Step ID: <%= params[:id] %> </p>
+
+<%= link_to 'View Step', list_step_path(params[:list_id], params[:id]) %>
+<%= link_to 'Back to lists', lists_path %>
